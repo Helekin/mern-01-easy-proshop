@@ -9,6 +9,7 @@ import { notFound, errorHandler } from "./middleware/errorMiddleware.js";
 
 import userRoutes from "./routes/user.js";
 import productRoutes from "./routes/product.js";
+import orderRoutes from "./routes/order.js";
 
 const port = process.env.PORT || 5000;
 
@@ -29,6 +30,11 @@ app.get("", (req, res) => {
 
 app.use("/api/users", userRoutes);
 app.use("/api/products", productRoutes);
+app.use("/api/orders", orderRoutes);
+
+app.use("/api/config/paypal", (req, res) =>
+  res.send({ clientId: process.env.PAYPAL_CLIENT_ID })
+);
 
 app.use(notFound);
 app.use(errorHandler);
