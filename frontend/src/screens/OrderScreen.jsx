@@ -64,8 +64,8 @@ const OrderScreen = () => {
         await payOrder({ orderId, details });
         refetch();
         toast.success("Payment successful");
-      } catch (error) {
-        toast.error(error?.data?.message || error.message);
+      } catch (err) {
+        toast.error(err?.data?.message || err.message);
       }
     });
   }
@@ -103,8 +103,8 @@ const OrderScreen = () => {
       refetch();
 
       toast.success("Order delivered");
-    } catch (error) {
-      toast.error(error?.data?.message || error.message);
+    } catch (err) {
+      toast.error(err?.data?.message || err.message);
     }
   };
 
