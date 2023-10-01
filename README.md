@@ -1,6 +1,6 @@
 ## About The Project
 
-In this project you will find the complete exercise corresponding to the Udemy course of the user and instructor Brad Traversy called "MERN From Scratch 2023 | eCommerce Platform (last updated August 2023)"
+This project is a comprehensive exercise corresponding to the Udemy course "MERN From Scratch 2023 | eCommerce Platform" by Brad Traversy (last updated August 2023). It serves as an eCommerce platform developed using MERN stack.
 
 - [Udemy Instructor](https://www.udemy.com/user/brad-traversy/)
 - [Udemy Course](https://www.udemy.com/course/mern-ecommerce/)
