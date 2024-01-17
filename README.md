@@ -1,6 +1,6 @@
 ## About The Project
 
-This project is a comprehensive exercise corresponding to the Udemy course "MERN From Scratch 2023 | eCommerce Platform" by Brad Traversy (last updated August 2023). It serves as an eCommerce platform developed using MERN stack.
+Greetings! Here, you'll find a project derived from the Udemy course "MERN From Scratch 2023 | eCommerce Platform" by instructor Brad Traversy. The course was last updated in August 2023. It serves as an eCommerce platform developed using MERN stack.
 
 - [Udemy Instructor](https://www.udemy.com/user/brad-traversy/)
 - [Udemy Course](https://www.udemy.com/course/mern-ecommerce/)
@@ -13,11 +13,11 @@ This iteration might feature alterations compared to the initial course code, in
 
 ### Prerequisites
 
-- Use any code editor
+- To get started, make sure you have any code editor installed.
 
 ### Installation
 
-1. Clone the repo
+1. Clone the repository to your local machine:
 
 ```sh
 git clone https://github.com/Helekin/mern-01-easy-proshop.git
@@ -73,6 +73,10 @@ john@email.com (Customer)
 jane@email.com (Customer)
 123456
 ```
+
+### API
+
+The `easy-proshop.json` file can be loaded into the program known as Postman to review all the APIs generated in the backend.
 
 ## License
 

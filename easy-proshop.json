@@ -1,0 +1,309 @@
+{
+  "info": {
+    "_postman_id": "1d9d017f-4812-451d-8e16-3b28fc5c4a14",
+    "name": "mern-01-easy-proshop",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "29171060"
+  },
+  "item": [
+    {
+      "name": "users",
+      "item": [
+        {
+          "name": "admin",
+          "item": [
+            {
+              "name": "users",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{URL}}/users",
+                  "host": ["{{URL}}"],
+                  "path": ["users"]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "users/:id",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{URL}}/users/:id",
+                  "host": ["{{URL}}"],
+                  "path": ["users", ":id"],
+                  "variable": [
+                    {
+                      "key": "id",
+                      "value": ""
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "users/:id",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                  "raw": "{{URL}}/users/:id",
+                  "host": ["{{URL}}"],
+                  "path": ["users", ":id"],
+                  "variable": [
+                    {
+                      "key": "id",
+                      "value": ""
+                    }
+                  ]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "users/:id",
+              "request": {
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "{{URL}}/users/:id",
+                  "host": ["{{URL}}"],
+                  "path": ["users", ":id"],
+                  "variable": [
+                    {
+                      "key": "id",
+                      "value": ""
+                    }
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "users",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Dante Acuña\",\r\n    \"email\": \"dante@gmail.com\",\r\n    \"password\": \"123456\"\r\n}"
+            },
+            "url": {
+              "raw": "{{URL}}/users",
+              "host": ["{{URL}}"],
+              "path": ["users"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "users/auth",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"email\": \"clsjs2294@gmail.com\",\r\n    \"password\": \"123456\"\r\n}"
+            },
+            "url": {
+              "raw": "{{URL}}/users/auth",
+              "host": ["{{URL}}"],
+              "path": ["users", "auth"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "users/logout",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{URL}}/users/logout",
+              "host": ["{{URL}}"],
+              "path": ["users", "logout"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "users/profile",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{URL}}/users/profile",
+              "host": ["{{URL}}"],
+              "path": ["users", "profile"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "users/profile",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"name\": \"Dante Acuña\",\r\n    \"email\": \"dante@gmail.com\"\r\n}"
+            },
+            "url": {
+              "raw": "{{URL}}/users/profile",
+              "host": ["{{URL}}"],
+              "path": ["users", "profile"]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "products",
+      "item": [
+        {
+          "name": "products",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{URL}}/products",
+              "host": ["{{URL}}"],
+              "path": ["products"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "products/:id",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{URL}}/products/:id",
+              "host": ["{{URL}}"],
+              "path": ["products", ":id"],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "650b1b8eff5ff2eb59b972fd"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "orders",
+      "item": [
+        {
+          "name": "admin",
+          "item": [
+            {
+              "name": "orders",
+              "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{URL}}/orders",
+                  "host": ["{{URL}}"],
+                  "path": ["orders"]
+                }
+              },
+              "response": []
+            },
+            {
+              "name": "orders/:id/deliver",
+              "request": {
+                "method": "PUT",
+                "header": [],
+                "url": {
+                  "raw": "{{URL}}/orders/:id/deliver",
+                  "host": ["{{URL}}"],
+                  "path": ["orders", ":id", "deliver"],
+                  "variable": [
+                    {
+                      "key": "id",
+                      "value": "1"
+                    }
+                  ]
+                }
+              },
+              "response": []
+            }
+          ]
+        },
+        {
+          "name": "orders",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{URL}}/orders",
+              "host": ["{{URL}}"],
+              "path": ["orders"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "orders/me",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{URL}}/orders/me",
+              "host": ["{{URL}}"],
+              "path": ["orders", "me"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "orders/:id/pay",
+          "request": {
+            "method": "PUT",
+            "header": [],
+            "url": {
+              "raw": "{{URL}}/orders/:id/pay",
+              "host": ["{{URL}}"],
+              "path": ["orders", ":id", "pay"],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": "1"
+                }
+              ]
+            }
+          },
+          "response": []
+        }
+      ]
+    }
+  ]
+}
